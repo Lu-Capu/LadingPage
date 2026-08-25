@@ -2,13 +2,20 @@ html {
     font-family: Georgia, 'Iowan Old Style', 'Palatino Linotype', 'Times New Roman', serif;
     line-height: 1.8;
     word-spacing: 0.05em;
+    font-size: 1rem;
 }
 
 body {
     background-color: #FBF9F1;
     color: #4A3525;
 }
-
+#Contacto,#Servicios{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
 a {
     text-decoration: none;
     color: white;
@@ -41,6 +48,7 @@ nav {
 
 h2 {
     margin-bottom: -1%;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
 }
 
 .imagen-contenedor {
@@ -50,6 +58,11 @@ h2 {
     padding-top: 1%;
 }
 
+.dimension-imagen{
+    display: flex;
+    width: 300px;
+    height: 300px;
+}
 .contactar {
     border: 5px solid #2E5A44;
     box-shadow: 0 4px 8px #1B2A4A;
@@ -57,11 +70,13 @@ h2 {
     display: inline-block;
     padding-left: 1%;
     padding-right: 1%;
+    width: 350px;
 }
 
 .contactar ul li a {
     color: #4A3525;
 }
+
 
 .pie {
     display: flex;
@@ -70,3 +85,4 @@ h2 {
     background-color: #1B2A4A;
     color: white;
 }
+
