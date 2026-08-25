@@ -1,0 +1,72 @@
+html {
+    font-family: Georgia, 'Iowan Old Style', 'Palatino Linotype', 'Times New Roman', serif;
+    line-height: 1.8;
+    word-spacing: 0.05em;
+}
+
+body {
+    background-color: #FBF9F1;
+    color: #4A3525;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    color: #2E5A44;
+}
+
+.nav-link {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: right;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #1B2A4A;
+}
+
+.logo {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+h2 {
+    margin-bottom: -1%;
+}
+
+.imagen-contenedor {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding-top: 1%;
+}
+
+.contactar {
+    border: 5px solid #2E5A44;
+    box-shadow: 0 4px 8px #1B2A4A;
+    margin: 1%;
+    display: inline-block;
+    padding-left: 1%;
+    padding-right: 1%;
+}
+
+.contactar ul li a {
+    color: #4A3525;
+}
+
+.pie {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #1B2A4A;
+    color: white;
+}
