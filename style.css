@@ -1,10 +1,14 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 html {
     font-family: Georgia, 'Iowan Old Style', 'Palatino Linotype', 'Times New Roman', serif;
     line-height: 1.8;
     word-spacing: 0.05em;
     font-size: 1rem;
 }
-
 body {
     background-color: #FBF9F1;
     color: #4A3525;
@@ -30,6 +34,7 @@ a:hover {
     gap: 20px;
     align-items: center;
     justify-content: right;
+    list-style-type: none;
 }
 
 nav {
@@ -39,10 +44,14 @@ nav {
     padding: 10px 20px;
     background-color: #1B2A4A;
 }
-
-.logo {
+.logo{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+.Bienvenido{
     color: white;
-    font-size: 24px;
+    font-size: 12px;
     font-weight: bold;
 }
 
@@ -70,13 +79,16 @@ h2 {
     display: inline-block;
     padding-left: 1%;
     padding-right: 1%;
-    width: 350px;
+    width: 400px;
 }
-
+.contactar ul li{
+    margin-left: 10%;
+    
+}
 .contactar ul li a {
     color: #4A3525;
+    
 }
-
 
 .pie {
     display: flex;
