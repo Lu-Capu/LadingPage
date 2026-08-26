@@ -20,6 +20,16 @@ body {
     justify-content: center;
     padding: 20px;
 }
+
+h2 {
+    margin-bottom: 1%;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* BLOQUE NAVEGADOR */
 a {
     text-decoration: none;
     color: white;
@@ -44,37 +54,54 @@ nav {
     padding: 10px 20px;
     background-color: #1B2A4A;
 }
-.logo{
-    display: flex;
-    align-items: center;
-    justify-content: left;
-}
+
 .Bienvenido{
     color: white;
-    font-size: 12px;
+    font-size: 25px;
     font-weight: bold;
 }
 
-h2 {
-    margin-bottom: 1%;
-    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
-    font-size: 2rem;
+/* BLOQUE INICIO */
+#Inicio {
     display: flex;
     justify-content: center;
-    align-items: center;
+    padding: 80px 20px;
 }
-
-.imagen-contenedor {
+.contenedor-Inicio {
+    max-width: 1100px;
+    width: 100%;
     display: flex;
     align-items: center;
-    gap: 20px;
-    padding-top: 1%;
+    justify-content: space-between;
+    gap: 50px;
 }
 
-.dimension-imagen{
-    display: flex;
-    width: 300px;
-    height: 300px;
+.texto-hero {
+    max-width: 550px;
+}
+
+.texto-hero .peque {
+    font-size: 0.8rem;
+    letter-spacing: 0.15em;
+    color: #2E5A44;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+
+.titulo-destacado {
+    font-size: 3.2rem;
+    font-style: italic;
+    font-weight: 800;
+    line-height: 1.15;
+    color: #4A3525;
+    margin-bottom: 20px;
+}
+
+.texto-hero .parrafo {
+    font-size: 1.05rem;
+    color: #4A3525;
+    margin-bottom: 30px;
+    line-height: 1.6;
 }
 /* BLOQUE DE Nosotros */
 
