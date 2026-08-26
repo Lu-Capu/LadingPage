@@ -13,7 +13,7 @@ body {
     background-color: #FBF9F1;
     color: #4A3525;
 }
-#Contacto,#Servicios{
+#Contacto,#Nosotros{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -56,8 +56,12 @@ nav {
 }
 
 h2 {
-    margin-bottom: -1%;
+    margin-bottom: 1%;
     text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .imagen-contenedor {
@@ -72,24 +76,93 @@ h2 {
     width: 300px;
     height: 300px;
 }
+/* BLOQUE DE Nosotros */
+
+#Nosotros {
+    display: flex;
+    justify-content: center;
+    padding: 60px 20px;
+}
+
+.contenedor-Nosotros {
+    max-width: 1100px;
+    background-color: #F3EFE0; 
+    padding: 60px 80px;
+    text-align: left;
+}
+
+.contenedor-Nosotros h2 {
+    font-size: 2.2rem;
+    font-weight: 800;
+    justify-content: flex-start;
+    margin-bottom: 40px;
+}
+
+.peque {
+    font-size: 0.75rem;
+    letter-spacing: 0.15em;
+    color: #2E5A44;
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+
+.lista {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 32px;
+}
+
+.lista li {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.numero {
+    font-size: 0.85rem;
+    color: #2E5A44;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+
+.lista h3 { 
+    font-size: 1.05rem; 
+    margin: 0 0 8px 0; 
+    color: #1A1A1A;
+    font-weight: bold;
+}
+
+.lista p { 
+    margin: 0; 
+    color: #6E5B47; 
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+/* BLOQUE DE CONTACTO */
 .contactar {
     border: 5px solid #2E5A44;
     box-shadow: 0 4px 8px #1B2A4A;
     margin: 1%;
     display: inline-block;
-    padding-left: 1%;
-    padding-right: 1%;
+padding: 3%;
     width: 400px;
 }
-.contactar ul li{
-    margin-left: 10%;
-    
+.contenedor-contacto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: left;
 }
-.contactar ul li a {
-    color: #4A3525;
-    
-}
+.contactar ul li{margin-left: 10%;}
 
+.contactar ul li a {color: #4A3525;}
+
+
+/* BLOQUE DE FOOTER */
 .pie {
     display: flex;
     align-items: center;
