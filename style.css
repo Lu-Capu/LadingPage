@@ -1,19 +1,22 @@
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
+
 html {
     font-family: Georgia, 'Iowan Old Style', 'Palatino Linotype', 'Times New Roman', serif;
     line-height: 1.8;
     word-spacing: 0.05em;
     font-size: 1rem;
 }
+
 body {
     background-color: #FBF9F1;
     color: #4A3525;
 }
-#Contacto,#Nosotros{
+
+#Contacto,#Nosotros {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -29,6 +32,7 @@ h2 {
     justify-content: center;
     align-items: center;
 }
+
 /* BLOQUE NAVEGADOR */
 a {
     text-decoration: none;
@@ -36,7 +40,8 @@ a {
 }
 
 a:hover {
-    color: #2E5A44;
+    color: bisque;
+
 }
 
 .nav-link {
@@ -55,46 +60,24 @@ nav {
     background-color: #1B2A4A;
 }
 
-.Bienvenido{
+.Bienvenido {
     color: white;
     font-size: 25px;
     font-weight: bold;
 }
 
 /* BLOQUE INICIO */
-#Inicio {
+.contenedor-Inicio {
     display: flex;
     justify-content: center;
-    padding: 80px 20px;
-}
-.contenedor-Inicio {
-    max-width: 1100px;
-    width: 100%;
-    display: flex;
     align-items: center;
-    justify-content: space-between;
-    gap: 50px;
 }
 
 .texto-hero {
-    max-width: 550px;
-}
-
-.texto-hero .peque {
-    font-size: 0.8rem;
-    letter-spacing: 0.15em;
-    color: #2E5A44;
-    font-weight: 600;
-    margin-bottom: 12px;
-}
-
-.titulo-destacado {
-    font-size: 3.2rem;
-    font-style: italic;
-    font-weight: 800;
-    line-height: 1.15;
-    color: #4A3525;
-    margin-bottom: 20px;
+    display: flexbox;
+    justify-content: center;
+    align-items: center;
+    width: 450px;
 }
 
 .texto-hero .parrafo {
@@ -103,17 +86,60 @@ nav {
     margin-bottom: 30px;
     line-height: 1.6;
 }
-/* BLOQUE DE Nosotros */
 
+.imagen-contenedor {
+    display: flex;
+    width: 500px;
+    height: 350px;
+    margin-top: 2%;
+    margin-left: 2%;
+}
+
+.btn-Nosotros{
+    background-color: #2E5A44;
+    border: black solid 2px;
+    color: white;
+    padding: 2%;
+}
+.btn-Catalogo{
+    background-color: #4A3525;
+    border: black solid 2px;
+    color: white;
+    padding: 2%;
+}
+
+/* BLOQUE DE Catalogo */
+#Catalogo {
+    padding: 10px 50px;
+}
+.subLista {
+    background-color:#F3EFE0 ;
+    text-align: center;
+    align-items: center !important;
+}
+
+.imagen-libro{
+display: flex;
+justify-content: center;
+}
+
+.imagen-libro img{
+width: 300px;
+height: 200px;
+object-fit: contain;
+flex-shrink: 0;
+}
+
+/* BLOQUE DE Nosotros */
 #Nosotros {
     display: flex;
     justify-content: center;
-    padding: 60px 20px;
+    padding: 30px 20px;
 }
 
 .contenedor-Nosotros {
     max-width: 1100px;
-    background-color: #F3EFE0; 
+    background-color: #F3EFE0;
     padding: 60px 80px;
     text-align: left;
 }
@@ -155,38 +181,50 @@ nav {
     margin-bottom: 12px;
 }
 
-.lista h3 { 
-    font-size: 1.05rem; 
-    margin: 0 0 8px 0; 
+.lista h3 {
+    font-size: 1.05rem;
+    margin: 0 0 8px 0;
     color: #1A1A1A;
     font-weight: bold;
 }
 
-.lista p { 
-    margin: 0; 
-    color: #6E5B47; 
+.lista p {
+    margin: 0;
+    color: #6E5B47;
     font-size: 0.95rem;
     line-height: 1.5;
 }
 
 /* BLOQUE DE CONTACTO */
+#Contacto {
+    display: flex;
+    justify-content: center;
+    padding: 30px 20px;
+    padding-top: 0%;
+}
 .contactar {
     border: 5px solid #2E5A44;
     box-shadow: 0 4px 8px #1B2A4A;
     margin: 1%;
     display: inline-block;
-padding: 3%;
+    padding: 3%;
     width: 400px;
 }
-.contenedor-contacto{
+
+.contenedor-contacto {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: left;
 }
-.contactar ul li{margin-left: 10%;}
 
-.contactar ul li a {color: #4A3525;}
+.contactar ul li {
+    margin-left: 10%;
+}
+
+.contactar ul li a {
+    color: #4A3525;
+}
 
 
 /* BLOQUE DE FOOTER */
@@ -197,4 +235,3 @@ padding: 3%;
     background-color: #1B2A4A;
     color: white;
 }
-
