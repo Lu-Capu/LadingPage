@@ -14,9 +14,11 @@ html {
 body {
     background-color: #FBF9F1;
     color: #4A3525;
+    padding-top: 70px;
 }
 
-#Contacto,#Nosotros {
+#Contacto,
+#Nosotros {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -38,11 +40,7 @@ a {
     text-decoration: none;
     color: white;
 }
-
-a:hover {
-    color: bisque;
-
-}
+a:hover { color: bisque;}
 
 .nav-link {
     display: flex;
@@ -51,6 +49,15 @@ a:hover {
     justify-content: right;
     list-style-type: none;
 }
+.nav-link a {
+    padding: 4px 2px;
+    border-bottom: 2px solid transparent;
+}
+
+.nav-link a.activo {
+    color: bisque;
+    border-bottom-color: bisque;
+}
 
 nav {
     display: flex;
@@ -58,6 +65,11 @@ nav {
     align-items: center;
     padding: 10px 20px;
     background-color: #1B2A4A;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
 }
 
 .Bienvenido {
@@ -95,13 +107,14 @@ nav {
     margin-left: 2%;
 }
 
-.btn-Nosotros{
+.btn-Nosotros {
     background-color: #2E5A44;
     border: black solid 2px;
     color: white;
     padding: 2%;
 }
-.btn-Catalogo{
+
+.btn-Catalogo {
     background-color: #4A3525;
     border: black solid 2px;
     color: white;
@@ -112,22 +125,77 @@ nav {
 #Catalogo {
     padding: 10px 50px;
 }
+
 .subLista {
-    background-color:#F3EFE0 ;
+    background-color: #F3EFE0;
     text-align: center;
     align-items: center !important;
+    padding-top: 32px;
+    padding-bottom: 32px;
 }
 
-.imagen-libro{
-display: flex;
-justify-content: center;
+.imagen-libro {
+    height: 300px;
+    width: 250px;
+    overflow: hidden;
 }
 
-.imagen-libro img{
-width: 300px;
-height: 200px;
-object-fit: contain;
-flex-shrink: 0;
+.imagen-libro img {
+    width: 90%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.contenedor {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.lista.catalogo-grid {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.lista.catalogo-grid h3 {
+    min-height: 2.6em;
+}
+
+.badge {
+    position: relative;
+    right: 25%;
+    bottom: 15px;
+    background-color: #2E5A44;
+    color: white;
+    font-size: 0.7rem;
+    font-weight: bold;
+    letter-spacing: 0.05em;
+    padding: 4px 10px;
+    border-radius: 10px;
+    text-transform: uppercase;
+}
+
+.catalogo-footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: auto;
+    gap: 10px;
+}
+
+.precio {
+    font-weight: bold;
+    color: #1B2A4A;
+}
+
+.btn-Consultar {
+    background-color: #25D366;
+    color: white;
+    padding: 8px 14px;
+    border-radius: 6px;
+    font-size: 0.85rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
 }
 
 /* BLOQUE DE Nosotros */
@@ -195,6 +263,7 @@ flex-shrink: 0;
     line-height: 1.5;
 }
 
+
 /* BLOQUE DE CONTACTO */
 #Contacto {
     display: flex;
@@ -202,6 +271,7 @@ flex-shrink: 0;
     padding: 30px 20px;
     padding-top: 0%;
 }
+
 .contactar {
     border: 5px solid #2E5A44;
     box-shadow: 0 4px 8px #1B2A4A;
@@ -234,4 +304,85 @@ flex-shrink: 0;
     justify-content: center;
     background-color: #1B2A4A;
     color: white;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+/* ============ RESPONSIVE ============ */
+
+@media (max-width: 900px) {
+    .contenedor-Inicio {
+        flex-direction: column;
+        text-align: center;
+        gap: 24px;
+        padding: 20px;
+    }
+
+    .texto-hero {
+        width: 100%;
+        max-width: 500px;
+        margin: 0 auto;
+    }
+
+    .imagen-contenedor {
+        width: 100%;
+        max-width: 350px;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    .contenedor-Nosotros {
+        padding: 40px 30px;
+    }
+
+    .lista {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 700px) {
+    nav {
+        flex-wrap: wrap;
+        gap: 10px;
+        padding: 12px 16px;
+    }
+
+    .nav-link {
+        width: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+
+    body {
+        padding-top: 100px; /* el nav ahora ocupa dos filas, ajusta este valor si no calza */
+    }
+
+    .lista.catalogo-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .lista {
+        grid-template-columns: 1fr;
+    }
+
+    .contenedor-Nosotros {
+        padding: 30px 20px;
+    }
+
+    .contactar {
+        width: 100%;
+        max-width: 100%;
+        padding: 6%;
+    }
+
+    .hero-botones {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+    }
 }
