@@ -4,8 +4,7 @@ Landing page de una librería online con catálogo de libros, integrada con
 WhatsApp Business para consultas. El botón "Consultar" de cada libro genera un
 mensaje prellenado con el título y el precio, y abre el chat.
 
-![Portada](assets/portada.png)
-<!-- 👆 Reemplaza esta línea por tu captura. -->
+![Vista principal de la librería](assets/portada.png)
 
 ## 🛠️ Tecnologías
 
@@ -62,12 +61,19 @@ landing-libreria/
 
 ## 📸 Capturas
 
-| Vista | Imagen |
+**Catálogo** — cada tarjeta con su botón de consulta por WhatsApp
+
+![Catálogo](assets/catalogo.png)
+
+**Nosotros y contacto**
+
+| Nosotros | Contacto |
 |---|---|
-| Portada | `assets/portada.png` |
-| Catálogo | `assets/catalogo.png` |
-| Contacto | `assets/contacto.png` |
-| Móvil | `assets/movil.png` |
+| ![Nosotros](assets/nosotros.png) | ![Contacto](assets/contacto.png) |
+
+**Vista móvil**
+
+![Vista móvil](assets/movil.png)
 
 ## 🔗 Demo en vivo
 
