@@ -73,23 +73,6 @@ landing-libreria/
 
 [▶ Ver demo](https://lu-capu.github.io/landing-libreria/) · [💻 Ver código](https://github.com/Lu-Capu/landing-libreria)
 
-## 📚 Qué aprendí
-
-- **`IntersectionObserver` con `rootMargin` negativo** para detectar la sección
-  central y no solo "algo que se ve", que es lo que hace que el scroll-spy
-  funcione bien
-- **URLs dinámicas** con template literals y `encodeURIComponent`,
-  indispensable para que los acentos y espacios de los títulos no rompan el enlace
-- **`e.target.closest()`** para subir desde el botón pulsado hasta la tarjeta y
-  leer sus datos sin acoplarlos
-- **Delegación de eventos** con `querySelectorAll` y `forEach`
-- **El DOM como única fuente de verdad:** el precio se lee de la tarjeta en vez
-  de repetirse en el JavaScript, así no se desincronizan
-- **SEO básico:** `meta viewport`, `lang="es"`, `meta description` y jerarquía
-  de encabezados `h1` → `h2` → `h3`
-- **Seguridad en enlaces externos** con `target="_blank"` acompañado de
-  `rel="noopener noreferrer"`
-
 ## 📞 Nota sobre los datos de contacto
 
 El número de WhatsApp, el correo y las redes sociales están hardcodeados en
